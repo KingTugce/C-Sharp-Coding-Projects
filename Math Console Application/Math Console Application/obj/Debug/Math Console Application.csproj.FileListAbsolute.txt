@@ -1,0 +1,6 @@
+C:\Users\tu2ce\Documents\GitHub\Tech-Academy-Projects\Math Console Application\Math Console Application\bin\Debug\Math Console Application.exe.config
+C:\Users\tu2ce\Documents\GitHub\Tech-Academy-Projects\Math Console Application\Math Console Application\bin\Debug\Math Console Application.exe
+C:\Users\tu2ce\Documents\GitHub\Tech-Academy-Projects\Math Console Application\Math Console Application\bin\Debug\Math Console Application.pdb
+C:\Users\tu2ce\Documents\GitHub\Tech-Academy-Projects\Math Console Application\Math Console Application\obj\Debug\Math Console Application.csproj.CoreCompileInputs.cache
+C:\Users\tu2ce\Documents\GitHub\Tech-Academy-Projects\Math Console Application\Math Console Application\obj\Debug\Math Console Application.exe
+C:\Users\tu2ce\Documents\GitHub\Tech-Academy-Projects\Math Console Application\Math Console Application\obj\Debug\Math Console Application.pdb
