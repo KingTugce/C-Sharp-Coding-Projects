@@ -1,0 +1,7 @@
+C:\Users\tu2ce\Documents\GitHub\The-Tech-Academy-C-Sharp-Coding-Projects\AnonymousIncomeComparisonProgram\AnonymousIncomeComparisonProgram\bin\Debug\AnonymousIncomeComparisonProgram.exe.config
+C:\Users\tu2ce\Documents\GitHub\The-Tech-Academy-C-Sharp-Coding-Projects\AnonymousIncomeComparisonProgram\AnonymousIncomeComparisonProgram\bin\Debug\AnonymousIncomeComparisonProgram.exe
+C:\Users\tu2ce\Documents\GitHub\The-Tech-Academy-C-Sharp-Coding-Projects\AnonymousIncomeComparisonProgram\AnonymousIncomeComparisonProgram\bin\Debug\AnonymousIncomeComparisonProgram.pdb
+C:\Users\tu2ce\Documents\GitHub\The-Tech-Academy-C-Sharp-Coding-Projects\AnonymousIncomeComparisonProgram\AnonymousIncomeComparisonProgram\obj\Debug\AnonymousIncomeComparisonProgram.csprojAssemblyReference.cache
+C:\Users\tu2ce\Documents\GitHub\The-Tech-Academy-C-Sharp-Coding-Projects\AnonymousIncomeComparisonProgram\AnonymousIncomeComparisonProgram\obj\Debug\AnonymousIncomeComparisonProgram.csproj.CoreCompileInputs.cache
+C:\Users\tu2ce\Documents\GitHub\The-Tech-Academy-C-Sharp-Coding-Projects\AnonymousIncomeComparisonProgram\AnonymousIncomeComparisonProgram\obj\Debug\AnonymousIncomeComparisonProgram.exe
+C:\Users\tu2ce\Documents\GitHub\The-Tech-Academy-C-Sharp-Coding-Projects\AnonymousIncomeComparisonProgram\AnonymousIncomeComparisonProgram\obj\Debug\AnonymousIncomeComparisonProgram.pdb
