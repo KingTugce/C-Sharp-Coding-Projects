@@ -13,10 +13,10 @@ namespace Shipping_Quote_For_a_Package
 
 
             Console.WriteLine("Welcome to Package Express. Please follow the instructions below.");
-            Console.ReadLine();
+            System.Threading.Thread.Sleep(1000);
 
             Console.WriteLine("Please enter the packageWeight: ");
-            int packageWeight = Convert.ToInt32(Console.ReadLine());
+            int packageWeight = int.Parse(Console.ReadLine());
          
             if (packageWeight > 50)
             {
@@ -25,22 +25,28 @@ namespace Shipping_Quote_For_a_Package
             Console.ReadLine();
 
             Console.WriteLine("Please enter the packageWidth: ");
-            int packageWidth = Convert.ToInt32(Console.ReadLine());
+            int packageWidth = int.Parse(Console.ReadLine());
 
             Console.WriteLine("Please enter the packageHeight: ");
-            int packageHeight = Convert.ToInt32(Console.ReadLine());
+            int packageHeight = int.Parse(Console.ReadLine());
  
             Console.WriteLine("Please enter the packageLength: ");
-            int packageLength = Convert.ToInt32(Console.ReadLine());
+            int packageLength = int.Parse(Console.ReadLine());
 
-            if (packageHeight + packageLength + packageWeight + packageWidth > 50)
+            int packageDimension = packageLength + (2 * packageWidth) + (2 * packageHeight);
+
+            if (packageDimension > 50)
             {
-                Console.WriteLine("Package too big to be shipped via Package Express.")
+                Console.WriteLine("Package too big to be shipped via Package Express.");
+            }
+           
+            else 
+            {
+                float packageQuote = packageDimension * packageWeight / 100;
+                Console.WriteLine("Your estimated total for shipping this package is: " + "$" + packageQuote) ;
             }
 
             Console.ReadLine();
-
-           
         }
     }
 }
