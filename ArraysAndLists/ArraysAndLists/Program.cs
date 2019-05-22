@@ -5,18 +5,26 @@ using System.Collections.Generic;
     {
         static void Main(string[] args)
         {
-
+        /*-------------------------------WITH INT-------------------------------*/
         List<int> intList = new List<int>();
         intList.Add(4);
         intList.Add(10);
         //intList.Remove(10);
 
-        Console.WriteLine(intList[1]);
+        Console.WriteLine(intList[0]);
+        Console.ReadLine();
+        /*-------------------------------WITH STRING-------------------------------*/
+        List<string> intList = new List<string>();
+        intList.Add("Hello");
+        intList.Add("Tugce");
+        //intList.Remove("Tugce");
+
+        Console.WriteLine(intList[0]);
         Console.ReadLine();
 
 
 
-        
+
         //int[] numArray = new int[5];
         //numArray[0] = 5;
         //numArray[1] = 2;
@@ -33,6 +41,6 @@ using System.Collections.Generic;
         //Console.WriteLine(numArray2[5]);
         //Console.ReadLine();
 
-        }
+    }
     }
 
