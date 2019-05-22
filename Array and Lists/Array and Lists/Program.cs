@@ -19,18 +19,17 @@ namespace Array_and_Lists
             
             string[]    DayOfWeek1  = new string[] {"Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday" };
             
-            Console.WriteLine(DayOfWeek1[3]);
-            Console.ReadLine();
-
-            ////"3.Add in a message that displays when the user selects an index that doesn’t exist." l didn't understand how to add in a message.
-            //if (DayOfWeek.Length > 6)
-
-            //{
-            //    Console.WriteLine("index doesn't exist. ");
-            //}
+            Console.WriteLine("Give me a number");
+            int UserInput = Convert.ToInt32(Console.ReadLine());
+           
+            if (UserInput > 6)
+            {
+                Console.WriteLine("index doesn't exist. ");
+            }
 
 
 
+            Console.ReadLine(); 
 
             ////an List of strings:
 
