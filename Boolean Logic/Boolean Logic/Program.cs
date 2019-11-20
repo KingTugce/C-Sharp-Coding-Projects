@@ -6,7 +6,8 @@ namespace Boolean_Logic
     {
         static void Main(string[] args)
         {
-          //N.B: Items can be only true or false
+         
+            //N.B: Items can be only true or false
             
             //N.B: with && operator all have to be true.
             //Console.WriteLine(true && true && true || false);
