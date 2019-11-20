@@ -9,8 +9,6 @@ namespace CarInsuranceApprovalProgramDrill_6
         static void Main(string[] args)
         {
 
-
-          
             /*         REQUIRMENTS
 
             ask the following questions:
