@@ -34,6 +34,7 @@ using System.Collections.Generic;
         //N.B:Actually create an Array,we have to instantiate it,because Arrays are C# construct called Objects.
         
         //N.B: in C#, we have to define LENGTH of it before we begin. (How long, how many items this array will hold)like DOWN BELOW:
+            
            
         int[] numArray = new int[5];
         numArray[0] = 5;
