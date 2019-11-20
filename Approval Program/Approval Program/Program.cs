@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Approval_Program
+namespace CarInsuranceApprovalProgramDrill_6
 {
     class Program
     {
@@ -9,8 +9,6 @@ namespace Approval_Program
         static void Main(string[] args)
         {
 
-
-          
             /*         REQUIRMENTS
 
             ask the following questions:
