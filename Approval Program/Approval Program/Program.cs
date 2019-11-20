@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Approval_Program
+namespace CarInsuranceApprovalProgramDrill_6
 {
     class Program
     {
