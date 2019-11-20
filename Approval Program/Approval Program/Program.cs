@@ -10,25 +10,29 @@ namespace Approval_Program
         {
 
 
-            //            REQUIREMENTS
+          
+            /*         REQUIRMENTS
 
-            //Ask the following questions:
+            ask the following questions:
 
-            //            What is your age ?
+            What is your age ?
+            
+            Have you ever had a DUI?
 
-            //            Have you ever had a DUI?
+            How many speeding tickets do you have?
 
-            //How many speeding tickets do you have?
+            Use the following qualification rules to determine if the applicant qualifies for car insurance:
 
-            //Use the following qualification rules to determine if the applicant qualifies for car insurance:
+            Applicants must be over 15 years old.
 
-            //Applicants must be over 15 years old.
+            Applicants must not have any DUI’s.
 
-            //Applicants must not have any DUI’s.
+            Applicants must not have more than 3 speeding tickets.
 
-            //Applicants must not have more than 3 speeding tickets.
+            Print the result of the boolean expression created from the above business rules.
 
-            //Print the result of the boolean expression created from the above business rules.
+
+            EXAMPLE OUTPUT
 
             Console.WriteLine("What is your age?");
             Console.WriteLine(30);
@@ -36,7 +40,23 @@ namespace Approval_Program
             Console.WriteLine("false");
             Console.WriteLine(" How many speeding tickets do you have?");
             Console.WriteLine(1);
-            
+
+            */
+
+            Console.WriteLine("What is your age?");
+            int userAge = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Have you ever had a DUI? Please say 'true' or 'false')");
+            bool userDUI = Convert.ToBoolean(Console.ReadLine());
+            Console.WriteLine("How many tickets do you have?");
+            int userSpeedingTickets = Convert.ToInt32(Console.ReadLine());
+
+            bool isQualified = (userAge > 15 && userDUI == false && userSpeedingTickets <= 3);
+
+            Console.WriteLine("Are you Qualified?");
+            Console.WriteLine(isQualified);
+
+
+            Console.ReadLine();
 
             int AppAge = 30;
             string AppDUI = "0";
