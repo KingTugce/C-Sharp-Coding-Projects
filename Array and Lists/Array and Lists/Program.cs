@@ -35,9 +35,6 @@ namespace Array_and_Lists
             {
                 Console.WriteLine("index doesn't exist. ");
             }
-
-
-
             Console.ReadLine(); 
 
             ////an List of strings:
@@ -68,7 +65,6 @@ namespace Array_and_Lists
 
             //Console.WriteLine(intList[3]);
             //Console.ReadLine();
-
 
         }
     }
