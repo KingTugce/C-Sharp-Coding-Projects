@@ -1,8 +1,34 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+/*
+EXERCISE: BRANCHING
+Your job is to create a console-based application for getting a shipping quote for a package.
+REQUIREMENTS
+The first line of the program must be: “Welcome to Package Express. Please follow the instructions below.”
+The user must then be prompted for the package weight.
+If the weight is greater than 50, display the error message, “Package too heavy to be shipped via Package Express. Have a good day.” 
+At this point the program would end.
+The user must then be prompted for the package width.
+Then the package height.
+Then the package length.
+If the sum of the dimensions is greater than 50, display the error message, “Package too big to be shipped via Package Express.” 
+At this point the program would end.
+The sum total of dimensions are then multiplied by the weight and divided by 100.
+The result of that calculation is the quote.
+Display the quote to the user as a dollar amount.
+EXAMPLE
+Welcome to Package Express. Please follow the instructions below.
+Please enter the package weight:
+40
+Please enter the package width:
+5
+Please enter the package height:
+ 3
+Please enter the package length:
+ 3
+Your estimated total for shipping this package is: $4.40
+Thank you.
+*/
+
 
 namespace Shipping_Quote_For_a_Package
 {
