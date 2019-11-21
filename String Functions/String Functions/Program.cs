@@ -1,8 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 
 namespace String_Functions
 {
@@ -10,6 +7,13 @@ namespace String_Functions
     {
         static void Main(string[] args)
         {
+            /*
+            EXERCISE:
+            IN A CONSOLE APP, CREATE CODE THAT DOES THE FOLLOWING:
+            Concatenate three strings.
+            Convert a string to uppercase.
+            Create a Stringbuilder and build a paragraph of text, one sentence at a time.
+            */
             
             //string clouds = "Apricot said \" Hi Clouds\" ! \t\n Three different clouds type: \n\t \n High clouds are cirrus, cirrostratus, and cirrocumulus. \n Mid-level clouds are altostratus and altocumulus. \n Low-level clouds are cumulus congestus or towering cumulus.";
 
