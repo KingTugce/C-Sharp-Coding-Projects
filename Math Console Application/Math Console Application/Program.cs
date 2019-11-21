@@ -1,8 +1,14 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+/*
+EXERCISE:
+CREATE A CONSOLE APPLICATION THAT DOES THE FOLLOWING:
+1. Takes an input from the user, multiplies it by 50, and prints the result to the console. 
+(Note: make sure your code can take inputs larger than 10,000,000).
+2. Takes an input from the user, adds 25 to it, and prints the result to the console.
+3. Takes an input from the user, divides it by 12.5, and prints the result to the console.
+4. Takes an input from the user, checks if it is greater than 50, and prints the true/false result to the console.
+5. Takes an input from the user, divides it by 7, and prints the remainder to the console (tip: think % operator).
+*/
 
 namespace MathAndComparisonOperations
 {
@@ -39,29 +45,6 @@ namespace MathAndComparisonOperations
             double remainder = userInput5 % 7;
             Console.WriteLine("The answer is " + remainder);
             System.Threading.Thread.Sleep(900);
-
-
-            //int product = 5000001 * 50;
-            //Console.WriteLine(product);
-            //Console.ReadLine();
-
-            //int total = 250 + 25;
-            //Console.WriteLine("TwoHundredFifty plus Twentyfive = " + total.ToString());
-            //Console.ReadLine();
-
-            //int num1 = 25;
-            //float num2 = 12.5f;
-            //float total = num1 - num2;
-            //Console.WriteLine(total);
-            //Console.ReadLine();
-
-            //bool trueOrFalse = 250 > 50;
-            //Console.Write(trueOrFalse.ToString());
-            //Console.ReadLine();
-
-            //int remainder = 250 % 7;
-            //Console.WriteLine(remainder);
-            //Console.ReadLine();
 
         }
     }
