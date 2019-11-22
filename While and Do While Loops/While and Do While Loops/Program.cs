@@ -1,10 +1,4 @@
 ﻿using System;
-/*
-EXERCISE:
-IN A CONSOLE APP, CREATE CODE THAT DOES THE FOLLOWING:
-1. Do a boolean comparison using a while statement.
-2. Do a boolean comparison using a do while statement.
-*/
 
 
 namespace While_and_Do_While_Loops
