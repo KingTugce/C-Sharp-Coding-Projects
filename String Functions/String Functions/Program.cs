@@ -37,6 +37,7 @@ namespace String_Functions
 
             Console.WriteLine(sb);
             Console.ReadLine();
+            
         }
     }
 }
