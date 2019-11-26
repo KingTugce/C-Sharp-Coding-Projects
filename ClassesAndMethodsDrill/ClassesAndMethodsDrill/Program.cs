@@ -12,7 +12,6 @@ namespace ClassesAndMethodsDrill
     class Program
     {
        
-
         static void Main(string[] args)
         {
             Console.WriteLine("Please type a number that we can :");
