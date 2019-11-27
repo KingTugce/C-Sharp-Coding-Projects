@@ -1,4 +1,5 @@
-﻿using OperatorOverloading;
+﻿
+using Overloading;
 using System;
 using System.Linq;
 using System.Text;
@@ -14,7 +15,7 @@ IN A CONSOLE APP, CREATE CODE THAT DOES THE FOLLOWING:
 6. In the Main() method of the console app, instantiate the class and call the third method, passing in a string that equates to an integer.Display the result to the screen.
 */
 
-namespace OperatorOverloadingDrill
+namespace OverloadingDrill
 {
     class Program
     {
