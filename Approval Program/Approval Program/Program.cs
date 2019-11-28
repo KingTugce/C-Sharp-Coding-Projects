@@ -59,7 +59,7 @@ namespace CarInsuranceApprovalProgramDrill_6
             int AppAge = 30;
             string AppDUI = "0";
             int SpeedingTickets = 1;
-            bool isQualified = (AppAge > 15 && AppDUI == "0" && SpeedingTickets < 3);
+            bool Qualified = (AppAge > 15 && AppDUI == "0" && SpeedingTickets < 3);
 
             Console.WriteLine(isQualified);
 
