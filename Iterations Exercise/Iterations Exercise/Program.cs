@@ -15,16 +15,17 @@ namespace Iterations_Exercise
             //adding the user’s text to the string.
             //Then create a loop that prints off each string in the Array on a separate line.
 
-            //string[] Clouds = { "Cumulus humilis ", "Cumulus mediocris ", "Cumulonimbus ", "Cirrus ", "Cirrostratus " };
+            //string[] Clouds = { "Cumulus humilis ", "Cumulus mediocris ", 
+            //"Cumulonimbus ", "Cirrus ", "Cirrostratus " };
 
             //Console.WriteLine("What is your favorite cloud type?:\n");
             //string favcloud = Console.ReadLine();
 
-            // for (int i = 0; i < Clouds.Length; i++)
-            //    {
-            //         Clouds[i] = Clouds[i] + favcloud;
-            //         Console.WriteLine(Clouds[i]);
-            //    }
+            //for (int i = 0; i < Clouds.Length; i++)
+            //{
+            //    Clouds[i] = Clouds[i] + favcloud;
+            //    Console.WriteLine(Clouds[i]);
+            //}
 
             //Console.ReadLine();
 
@@ -56,22 +57,25 @@ namespace Iterations_Exercise
             //Console.ReadLine();
 
 
-            //===============================================================================================================//
+            //===============================================================================================================
 
 
-            //4. Create a loop where the comparison used to determine whether to continue iterating the loop is a “<” operator.//
+            //4. Create a loop where the comparison used to determine whether to continue iterating the loop is a “<” operator.
 
-            //for (int c = 0; c < Clouds.Length - 1; c++)
+
+            //Console.WriteLine("iterating “<” operator");
+            //for (int c = 0; c < 10 - 1; c++)
             //{
-            //    Console.WriteLine(Clouds[c]);
+            //    Console.WriteLine("Print this 9 times.");
             //}
             //Console.ReadLine();
 
-            //5.Create a loop where the comparison used to determine whether to continue iterating the loop
+            //5.Create a loop where the comparison used to determine whether to continue iterating the loop is a “<=” operator.
 
-            //for (int c = 0; c <= Clouds.Length - 1; c++)
+            //Console.WriteLine("iterating “<=” operator");
+            //for (int c = 0; c <= 8 - 1; c++)
             //{
-            //    Console.WriteLine(Clouds[c]);
+            //    Console.WriteLine("Print this 8 times.");
             //}
             //Console.ReadLine();
 
@@ -88,57 +92,55 @@ namespace Iterations_Exercise
             //Create a loop that iterates through the list and then displays the indices of the array that contain matching text on the screen.
 
             //10.Add code to that above loop that tells a user if they put in text that isn’t in the List.
+            Console.WriteLine("Write your favorite cloud and see if you will match in this list");
+            List<string> Clouds = new List<string>() {  
+                                                        "cumulus", "humilis ", "mediocris ", "cumulonimbus ", "cirrus ", "cirrostratus ",
+                                                        "fibratus","uncinus" , "spissatus" , "castellanus",
+                                                        "altocumulogenitus" , "homogenitus","cirrocumulogenitus" };
 
-            //List<string> Clouds = new List<string>() { "sheets", "at", "different", "layers", "of", "the", "upper", "troposphere",
-            //                                           "which", "may be", "connected at", "one or more", "points",
-            //                                            "normally", "associated with", "fibratus","and", "uncinus", "species",
-            //                                            "Cumulus humilis ", "Cumulus mediocris ", "Cumulonimbus ", "Cirrus ", "Cirrostratus ",
-            //                                            "Cirrus fibratus","Cirrus uncinus" , "Cirrus spissatus" , "Cirrus castellanus",
-            //                                            "Cirrus altocumulogenitus" , "Cirrus homogenitus","Cirrus cirrocumulogenitus" };
-
-            //Console.WriteLine("Select a Cloud from the List: ");
-            //string userInput = Console.ReadLine().ToLower();
-            //bool match = false;
-            //while (!match)
-            //{
-            //    for (int c = 0; c < Clouds.Count; c++)
-            //    {
-            //        if (Clouds[c] == userInput)
-            //        {
-            //            Console.WriteLine(c);
-            //            match = true;
-            //        }
-            //    }
-            //    if(!match)
-            //    {
-            //        Console.WriteLine("Oops...No Match! Please Try Again: ");
-            //        userInput = Console.ReadLine().ToLower();
-            //    }
-            //}
-
-            //Console.ReadLine();
-
-            List<string> TextClouds = new List<string>() { 
-                                                          "which", "may be", "connected at", "one or more", "points",
-                                                          "normally", "associated with", "fibratus","and", "uncinus", "species",
-                                                          "Cumulus humilis ", "Cumulus mediocris ", "Cumulonimbus ", "Cirrus ", "Cirrostratus ",
-                                                          "Cirrus fibratus","Cirrus uncinus" , "Cirrus spissatus" , "Cirrus castellanus",
-                                                          "Cirrusaltocumulogenitus" , "Cirrushomogenitus","Cirruscirrocumulogenitus" };
-            List<string> TextClouds1 = new List<string>();
-            foreach (string text in TextClouds)
+            Console.WriteLine("Select a Cloud from the List: ");
+            string userInput = Console.ReadLine().ToLower();
+            bool match = false;
+            while (!match)
             {
-                for (int t = 0; t < TextClouds1.Count; t++)
+                for (int c = 0; c < Clouds.Count; c++)
                 {
-                    if (text == TextClouds1[t])
+                    if (Clouds[c] == userInput)
                     {
-                        Console.WriteLine("This word already appeared:");
+                        Console.WriteLine(c);
+                        match = true;
                     }
                 }
-                TextClouds1.Add(text);
-                Console.WriteLine(text);
+                if (!match)
+                {
+                    Console.WriteLine("Oops... Please Try Again: ");
+                    userInput = Console.ReadLine().ToLower();
+                }
             }
 
             Console.ReadLine();
+
+            //List<string> TextClouds = new List<string>() { 
+            //                                              "which", "may be", "connected at", "one or more", "points",
+            //                                              "normally", "associated with", "fibratus","and", "uncinus", "species",
+            //                                              "Cumulus humilis ", "Cumulus mediocris ", "Cumulonimbus ", "Cirrus ", "Cirrostratus ",
+            //                                              "Cirrus fibratus","Cirrus uncinus" , "Cirrus spissatus" , "Cirrus castellanus",
+            //                                              "Cirrusaltocumulogenitus" , "Cirrushomogenitus","Cirruscirrocumulogenitus" };
+            //List<string> TextClouds1 = new List<string>();
+            //foreach (string text in TextClouds)
+            //{
+            //    for (int t = 0; t < TextClouds1.Count; t++)
+            //    {
+            //        if (text == TextClouds1[t])
+            //        {
+            //            Console.WriteLine("This word already appeared:");
+            //        }
+            //    }
+            //    TextClouds1.Add(text);
+            //    Console.WriteLine(text);
+            //}
+
+                //Console.ReadLine();
 
 
 
