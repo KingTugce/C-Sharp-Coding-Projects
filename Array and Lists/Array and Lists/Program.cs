@@ -5,7 +5,6 @@ IN A CONSOLE APP, CREATE CODE THAT DOES THE FOLLOWING:
 2. Create an array of integers. Ask the user to select an index of the Array and then display the integer at that index on the screen.
 3. Add in a message that displays when the user selects an index that doesn’t exist.
 4. Create a List of strings. Ask the user to select an index of the List and then display the content at that index on the screen.
-By:Tugce Simsek
  */
 using System;
 using System.Collections.Generic;
@@ -16,56 +15,39 @@ namespace Array_and_Lists
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("Please enter a number lower than 5");
+            byte num = Convert.ToByte(Console.ReadLine());
+            string[] weather = { "Happy", "Lucky", "Fun", "Sunny", "Smiley" };
+            string tomorrow = num > 5 ?
+                "The index you chose doesn't exist!" : 
+                "Tomorrow will be " + weather[num];
+            Console.WriteLine(tomorrow);
+            Console.ReadLine();
 
-            ////an array of strings
+            Console.WriteLine("Please select a number between 0 to 9.");
+            byte num2 = Convert.ToByte(Console.ReadLine());
+            int[] luckynum = { 133, 13, 123, 131, 313, 113, 1133, 3311, 33 };
+            string lucky = num2 > 9 ? 
+                "The index you chose doesn't exist!" :
+                "Your lucky number is " + "" + luckynum[num2] + ".";
+            Console.WriteLine(lucky);
+            Console.ReadLine();
 
-            string[] DayOfWeek = new string[6];
-            DayOfWeek[0] = "Sunday";
-            DayOfWeek[1] = "Monday";
-            DayOfWeek[2] = "Tuesday";
-            DayOfWeek[3] = "Wednesday";
-            DayOfWeek[4] = "Thursday";
-            
-            string[]    DayOfWeek1  = new string[] {"Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday" };
-            
-            Console.WriteLine("Give me a number");
-            int UserInput = Convert.ToInt32(Console.ReadLine());
-           
-            if (UserInput > 6)
-            {
-                Console.WriteLine("index doesn't exist. ");
-            }
-            Console.ReadLine(); 
-
-            ////an List of strings:
-
-            //List<string> intList = new List<string>();
-            //intList.Add("Hello");
-            //intList.Add("There");
-            //intList.Add("How");
-            //intList.Add("is");
-            //intList.Add("the");
-            //intList.Add("Weather");
-            //intList.Add("Today?");
-            ////intList.Remove("There");
-
-            //Console.WriteLine(intList[5]);
-            //Console.ReadLine();
-
-
-            ////an List of integers:
-
-            //List<int> intList = new List<int>();
-            //intList.Add(250);
-            //intList.Add(500);
-            //intList.Add(750);
-            //intList.Add(1000);
-
-            ////intList.Remove(500);
-
-            //Console.WriteLine(intList[3]);
-            //Console.ReadLine();
-
+            Console.WriteLine("Select one index starting from 0 to 6.");
+            byte num3 = Convert.ToByte(Console.ReadLine());
+            List<string> day = new List<string>();
+            day.Add("Sunday");
+            day.Add("Monday");
+            day.Add("Tuesday");
+            day.Add("Wednesday");
+            day.Add("Thursday");
+            day.Add("Friday");
+            day.Add("Saturday");
+            string vacation = num3 > 6 ?
+                "The index you chose doesn't exist!" :
+                "We're going vacation on " + day[num3] + "!";
+            Console.WriteLine(vacation);
+            Console.ReadLine();
         }
     }
 }
