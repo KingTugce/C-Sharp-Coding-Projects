@@ -10,41 +10,59 @@ namespace TwentyOne
     {
         static void Main(string[] args)
         {
-            Deck deck = new Deck();
-            //int timesShuffled = 0;
-            //deck = Shuffle(deck,out timesShuffled, 3);       //======> if comment only this line out it would be perfectly in order.
-            deck.Shuffle(3);                                                 
-      
+            //Super class method: when we calling a method  from a class inheriting from  we are callin the super class method.                                                                     
+            //TwentyOneGame game = new TwentyOneGame();                                   
+            //game.Players = new List<string>() { "Sean", "Vinny", "Jimmy" };
+            //game.ListPlayers();
+            //game.Play();
+            //Console.ReadLine();
 
-            foreach ( Card card in deck.Cards) 
+
+            //Note: Polymorhism is the ability of the class to morph into its inheriting class and it gave certain advantages.
+            //TwentyOneGame can morph into the Game Object. This is classic polymorphism:
+
+            Game game = new TwentyOneGame();
+
+            Deck deck = new Deck();
+            deck.Shuffle(3);
+
+
+            foreach (Card card in deck.Cards)
             {
-                Console.WriteLine(card.Face + " of " + card.Suit );
+                Console.WriteLine(card.Face + " of " + card.Suit);
             }
             Console.WriteLine(deck.Cards.Count);
-            //Console.WriteLine("Times shuffled: {0}", timesShuffled);
             Console.ReadLine();
-            
-            
+
+
+
+
+
+            //*************************************************SHUFFLED and some Methods****************************************************************
+
+
+
             //deck.Cards = new List<Card>();
 
-            ////N.B :let's create a deck of card:
+            ////N.B :let's create a deck of card.
+            //Note: We instantiated card object.
 
-            //Card cardOne = new Card();                                     //N.B : This will print "Quenn of Spades".
-            //cardOne.Face = "Quenn";                                        //N.B : If we dont assign any values later those are the default values.
+            //Card cardOne = new Card();                                //We assigned the string "Quenn" to the property 'Face' to the Object "CardOne".
+            //cardOne.Face = "Quenn";                                      
             //cardOne.Suit = "Spades";
 
             //deck.Cards.Add(cardOne); 
-            ////N.B : Filling this deck one by one will take too much time, thats why we will use the "constructor".The card class may not need constuctor 
-            ////N.B : but deck class could curtenlly needs one.
-            
+            //N.B : Filling this deck one by one will take too much time, thats why we will use the "constructor".The card class may not need constuctor 
+            // but deck class could certainly needs one.
+
             //Console.WriteLine(deck.Cards[0].Face + " of " + deck.Cards[0].Suit);
             //Console.ReadLine();
         }
-        //public static Deck Shuffle(Deck deck, out int timesShuffled, int times = 1)
+        //public static Deck Shuffle(Deck deck, out int timesShuffled, int times = 1)   //=====Verifing how many times shuffled with an out paramater.
         //{
 
         //    timesShuffled = 0;
-        //    for(int i = 0; i < times; i++)                                         //=========> Optional Paramaters 
+        //    for(int i = 0; i < times; i++)                                         //=========> *******Optional Paramaters 
         //    {
         //        timesShuffled = 0;
         //        List<Card> TempList = new List<Card>();
@@ -54,11 +72,11 @@ namespace TwentyOne
         //        {
         //            int randomIndex = random.Next(0, deck.Cards.Count);
         //            TempList.Add(deck.Cards[randomIndex]);
-        //            deck.Cards.RemoveAt(randomIndex);
+        //            deck.Cards.RemoveAt(randomIndex);                                  //'RemoveAt' is function of the List Method.
         //        }
         //        deck.Cards = TempList;
         //    }
-            
+
         //    return deck;
 
         //}

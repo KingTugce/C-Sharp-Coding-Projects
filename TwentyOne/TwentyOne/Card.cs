@@ -11,10 +11,12 @@ using System.Threading.Tasks;
 
 namespace TwentyOne
 {
+    //Note:Card class has a property of data type string call "Suit" and "Face".Making this property "public" that means it accesible to other part of the program.
+    //Class is an only design for an Object.
    public class Card
     {
         
-        public Card()                              //=========> //N.B: what we create is a constructor.It is very common in programming languages in general.
+        public Card()                 //=========> //N.B: what we create is a constructor.It is very common in programming languages in general.
                                                                 //N.B: it values assign to an Object upon creation. 
         {
             Suit = "Spades";

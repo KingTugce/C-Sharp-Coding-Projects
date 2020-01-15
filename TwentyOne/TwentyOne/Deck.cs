@@ -11,7 +11,7 @@ namespace TwentyOne
     {           
         public Deck()
         {
-            Cards = new List<Card>();
+            Cards = new List<Card>();    // we have to create the list, we cant just assign values.
             List<string> Suits = new List<string>() { "Clubs", "Hearts","Diamonds","Spades" };
             List<string> Faces = new List<string>()
             {
@@ -23,8 +23,8 @@ namespace TwentyOne
             {
                 foreach (string suit in Suits)
                 {
-                    Card card = new Card();
-                    card.Suit = suit;
+                    Card card = new Card();                     //This 'card' only exist in this each loop.
+                    card.Suit = suit;                           //we assign 'Suit' property with the value of 'suit'.
                     card.Face = face;
                     Cards.Add(card);
                 }
@@ -56,7 +56,7 @@ namespace TwentyOne
                 this.Cards = TempList;
             }
 
-           
+          
         }
     }      
         
